@@ -11,8 +11,8 @@ def excel():
     sheet.cell(row=1,column=3).value="EMAIL"
 def clear():
     name_field.delete(0,END)
-    phone_field.delete(1,END)
-    email_field.delete(2,END)
+    phone_field.delete(0,END)
+    email_field.delete(0,END)
 def insert():
     if(name_field.get()=="" and phone_field.get()=="" and email_field.get()==""):
         print("Please enter all fields")
